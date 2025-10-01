@@ -5,6 +5,42 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-gold-50: #fff8ed;
+  --color-gold-100: #ffefd4;
+  --color-gold-200: #ffdca9;
+  --color-gold-300: #ffb85c;
+  --color-gold-400: #fe9d39;
+  --color-gold-500: #fc7e13;
+  --color-gold-600: #ed6309;
+  --color-gold-700: #c54a09;
+  --color-gold-800: #9c3a10;
+  --color-gold-900: #7e3210;
+  --color-gold-950: #441706;
+  --color-green-50: #f2f7f4;
+  --color-green-100: #dfece3;
+  --color-green-200: #CBE1D7;
+  --color-green-300: #98bda7;
+  --color-green-400: #6b9c81;
+  --color-green-500: #44745b;
+  --color-green-600: #37644d;
+  --color-green-700: #2c503f;
+  --color-green-800: #254034;
+  --color-green-900: #1f352b;
+  --color-green-950: #101e17;
+  --color-black-50: #f7f7f8;
+  --color-black-100: #eeedf1;
+  --color-black-200: #d7d7e0;
+  --color-black-300: #b5b6c4;
+  --color-black-400: #8c8ea4;
+  --color-black-500: #6e7089;
+  --color-black-600: #585871;
+  --color-black-700: #48485c;
+  --color-black-800: #3e3e4e;
+  --color-black-900: #373743;
+  --color-black-950: #25252c;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
