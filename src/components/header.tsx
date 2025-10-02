@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { NavbarButton } from "./navbarButton";
 
 export const Header = () => {
     return (
@@ -14,8 +15,10 @@ export const Header = () => {
                 />
             </div>
             <div className={`text-gold-950 text-xl flex flex-row gap-6 col-start-2 col-end-4 justify-center items-center `}>
-                <h1>Test</h1>
-                <h1>Test2</h1>
+                <NavbarButton label="Home" />
+                <NavbarButton label="Events" />
+                <NavbarButton label="About" />
+                <NavbarButton label="Contact" />
             </div>
         </div>
     )
