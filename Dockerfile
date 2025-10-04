@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 # Copy only package files first to leverage caching
 COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
+RUN bun install typescript
 
 # Copy only necessary files for build
 COPY tsconfig.json next.config.ts ./
@@ -21,7 +22,8 @@ WORKDIR /usr/src/app
 
 # Copy only runtime dependencies
 COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile --production
+RUN bun install --frozen-lockfile
+RUN bun install typescript
 
 # Copy built app from builder stage
 COPY --from=builder /usr/src/app/.next ./.next
