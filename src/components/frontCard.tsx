@@ -22,6 +22,7 @@ export const FrontCard = () => {
                     <Image
                         className={``}
                         src={`svg/phi-green.svg`}
+                        alt={`greek letter phi`}
                         fill={true}
                     />
                 </div>
